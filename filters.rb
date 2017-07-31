@@ -22,7 +22,7 @@ end
 
 def ordered_by_qualifications (candidates)
   pp "SORTED BY EXPERIENCE"
-  most_qualified = candidates.sort_by {|candidate| [candidate[:years_of_experience], candidate[:github_points]]}
+  most_qualified = candidates.sort_by {|candidate| [candidate[:years_of_experience], candidate[:github_points]]}.reverse!
   pp most_qualified
 end
 
