@@ -5,8 +5,10 @@ require 'pry'
 require './candidates'
 require './filters'
 
-## Your test code can go here
-
+experienced? @candidates[0]
+find 5
+qualified_candidates @candidates
+ordered_by_qualifications @candidates
 # binding.pry
 
-pp @candidates
+# pp @candidates
